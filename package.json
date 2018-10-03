@@ -9,6 +9,8 @@
     "lint:watch": "yarn lint:watch:all",
     "// HACK lint:watch:all": "escape \" for windows",
     "lint:watch:all": "watch \"yarn lint:all\" .",
+    "pop-stash": "git stash && git stash pop stash@{1} && git read-tree stash && git stash drop",
+    "stash-unstaged": "git stash save -k 'pre-linting-stash' >> /dev/null",
     "stylus-supremacy:fix": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylintrc --replace",
     "stylus-supremacy:fix:dry": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylintrc",
     "stylus:compile": "stylus src/stylus/style.styl --out dist/style.css",
