@@ -16,10 +16,12 @@
     "stylus": "yarn stylus:watch"
   },
   "lint-staged": {
-    "src/**/*.styl": [
-      "yarn stylus-supremacy format $FILE --replace --options .stylussupremacyrc.json",
-      "git add"
-    ],
+    "linters": {
+      "src/**/*.styl": [
+        "yarn stylus-supremacy format $FILE --replace --options .stylussupremacyrc.json",
+        "git add"
+      ]
+    },
     "ignore": [
       "dist/**/*"
     ]
