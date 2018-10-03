@@ -27,5 +27,5 @@
   "stylusSupremacy.alwaysUseNoneOverZero": true,
   "stylusSupremacy.alwaysUseZeroWithoutUnit": true,
   "stylusSupremacy.reduceMarginAndPaddingValues": true,
-  "stylusSupremacy.ignoreFiles": []
+  "stylusSupremacy.ignoreFiles": ["vendor/**/*", "node_modules/**/*"]
 }
