@@ -18,7 +18,7 @@
   "lint-staged": {
     "linters": {
       "src/**/*.styl": [
-        "yarn stylus-supremacy format $FILE --replace --options .stylussupremacyrc.json",
+        "yarn stylus-supremacy format \\1 --replace --options .stylussupremacyrc.json",
         "git add"
       ]
     },
