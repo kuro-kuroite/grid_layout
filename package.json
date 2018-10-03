@@ -9,8 +9,8 @@
     "lint:watch": "yarn lint:watch:all",
     "// HACK lint:watch:all": "escape \" for windows",
     "lint:watch:all": "watch \"yarn lint:all\" .",
-    "stylus-supremacy:fix": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylussupremacyrc.json --replace",
-    "stylus-supremacy:fix:dry": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylussupremacyrc.json",
+    "stylus-supremacy:fix": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylintrc --replace",
+    "stylus-supremacy:fix:dry": "yarn stylus-supremacy format src/stylus/**/*.styl --options .stylintrc",
     "stylus:compile": "stylus src/stylus/style.styl --out dist/style.css",
     "stylus:watch": "stylus --watch src/stylus/style.styl --out dist/style.css",
     "stylus": "yarn stylus:watch"
