@@ -170,3 +170,77 @@ a:active {
   color: #7c5119;
   text-decoration: none;
 }
+.item {
+  margin-bottom: 4px;
+  padding: 8px;
+  width: 180px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.item.item-m {
+  width: 364px;
+}
+.item.item-l {
+  width: 732px;
+}
+.item.item-maindish {
+  border-color: #ffc0cb;
+}
+.item.item-maindish .categoty::before {
+  border-color: #ffc0cb;
+}
+.item.item-appetizer {
+  border-color: #76c047;
+}
+.item.item-appetizer .categoty::before {
+  border-color: #76c047;
+}
+.item.item-column {
+  border-color: #fff100;
+}
+.item.item-column .categoty::before {
+  border-color: #fff100;
+}
+.item.item-breaktime {
+  border-color: #c1efff;
+}
+.item.item-breaktime .categoty::before {
+  border-color: #c1efff;
+}
+.item .category {
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: 'Trebuchet MS', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+.item .category::before {
+  display: inline-block;
+  margin-right: 5px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid;
+  border-radius: 50%;
+  content: '';
+  vertical-align: -5px;
+}
+.item .description {
+  margin: 10px;
+  line-height: 1.5;
+}
+.item .image {
+  display: block;
+  width: 100%;
+}
+.item > a {
+  display: block;
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+.item > a:hover {
+  box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
+  opacity: 0.8;
+}
