@@ -1,0 +1,49 @@
+.header {
+  padding: 25px 0;
+  text-align: center;
+
+  &.item {
+    border-bottom: none;
+  }
+
+  & .nav {
+    margin: 35px auto 10px;
+  }
+
+  & .nav-item {
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    & a {
+      display: inline-block;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        display: block;
+        margin: 6px auto 0;
+        width: 0;
+        border-bottom: 1px solid #7c5119;
+        content: '';
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  }
+
+  & .logo {
+    width: 136px;
+    height: 136px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
