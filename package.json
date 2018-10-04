@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev:watch": "yarn dev:watch:all",
-    "dev:watch:all": "yarn run-p lint:watch:all stylus:watch",
+    "dev:watch:all": "run-p lint:watch:all stylus:watch",
     "lint": "yarn lint:all",
     "lint:all": "run-p lint:*:fix",
     "lint:css:fix": "yarn stylus-supremacy:fix",
