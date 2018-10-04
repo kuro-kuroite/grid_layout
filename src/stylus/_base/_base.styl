@@ -1,3 +1,31 @@
 /*
  * Base Style
-*/
+ */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+  background: color-base;
+  background-size: cover;
+  color: color-text;
+  font-size: 1.2rem;
+  font-family: Raleway, 'Hiragino Kaku Gothic ProN', Meiriyo, sans-serif;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: color-link;
+    text-decoration: none;
+  }
+}

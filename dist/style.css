@@ -147,3 +147,26 @@ input,
 select {
   vertical-align: middle;
 }
+html {
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  background: #f4f5f7;
+  background-size: cover;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: Raleway, 'Hiragino Kaku Gothic ProN', Meiriyo, sans-serif;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #7c5119;
+  text-decoration: none;
+}
